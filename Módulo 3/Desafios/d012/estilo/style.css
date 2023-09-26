@@ -45,6 +45,10 @@ header a:hover {
     text-decoration: underline;
 }
 
+main p {
+    text-indent: -1000px;
+}
+
 main {
     margin-top: 70px;
 }
@@ -57,13 +61,13 @@ main > pre {
     text-align: left;
 }
 
-main .img {
-    background-position: 100% 100%;
+main div {
+    background-color: aquamarine;
+}
+
+main .img-config {
+    background: 100% 100% no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 40px 0px;
-    color: white;
 }
 
 main #fundo01 {
@@ -74,9 +78,13 @@ main #fundo02 {
     background-image: url(../imagens/background002.jpg);
 }
 
-main p {
+main .text-img {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    padding: 3px;
+    
+    
 }
 
 footer {
