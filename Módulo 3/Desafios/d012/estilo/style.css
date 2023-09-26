@@ -1,38 +1,104 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'Cordel';
+    src: url(../fontes/Core\ Sans\ N\ SC\ W01\ 97\ Cn\ Black.ttf) format('truetype');
+    
+}
 * {
     margin: 0px;
     padding: 0px;
 }
 
 :root {
-    --font-padrao: Arial, Helvetica sans-serif;
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Cordel';
+
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    min-height: 200px;
+    min-height: 230px;
 }
 
 header > h1 {
-    font-size: 4.5em;
-    padding-top: 40px;
-    font-family: ;
+    font-size: 5em;
+    padding-top: 50px;
+    font-family: var(--font-destaque);
+    font-weight: lighter;
 }
 
 header > p {
     font-family: var(--font-padrao);
     font-size: 1.2em;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 header a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 70px;
+}
+
+main > pre {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 65px;
+    text-align: left;
+}
+
+main .img {
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 40px 0px;
+    color: white;
+}
+
+main #fundo01 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+main #fundo02 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+main p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px;
+}
+
+footer > p {
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer strong {
+    text-decoration: underline;
+}
+
+
+
+
+
 
 
 
