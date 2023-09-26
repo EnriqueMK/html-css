@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-padrao: Arial, Helvetica sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-height: 200px;
+}
+
+header > h1 {
+    font-size: 4.5em;
+    padding-top: 40px;
+    font-family: ;
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
