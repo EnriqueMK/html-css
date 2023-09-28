@@ -1,7 +1,7 @@
-@charset "ITF-8";
+@charset "UTF-8";
 @font-face {
     font-family: 'Cordel';
-    src: url(../fontes/Core\ Sans\ N\ SC\ W01\ 97\ Cn\ Black.ttf);
+    src: url(../fontes/Core\ Sans\ N\ SC\ W01\ 97\ Cn\ Black.ttf) format('truetype');
 }
 
 * {
@@ -10,23 +10,83 @@
 }
 
 :root {
-    --font-padrao: Arial, Helvetica, sans-serif;
     --font-destaque: 'Cordel';
-    --font-texto: cursive;
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --texto-cordel: cursive;
+}
+
+body {
+    font-family: var(--font-padrao);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 210px;
 }
 
 header > h1 {
     font-family: var(--font-destaque);
+    font-variant: small-caps;
     font-weight: lighter;
+    font-size: 4.5em;
     padding-top: 50px;
-    
-
-    
 }
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section > pre {
+    font-family: var(--texto-cordel);
+    font-size: 1.7em;
+    line-height: 60px;
+    white-space: pre-line;
+}
+
+section p {
+    padding-left: 30px;
+}
+
+section div {
+    color: white;
+
+}
+
+section #fundo01 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+section #fundo02 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+section .imagem {
+    background: right center no-repeat fixed;
+    background-size: cover;
+    padding: 30px 0px 30px 30px;
+}
+
+section .fundo-cinza {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
