@@ -3,89 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframes</title>
+    <title>iframe</title>
     <style>
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        main h1, main p {
             font-family: cursive;
+        }
+
+        header > h1 {
+            text-align: center;
             font-weight: lighter;
-            text-align: center;
         }
 
-        main p {
-            font-size: 1.5em;   
-            text-decoration: underline;
-            padding-top: 25px;
+        li {
+            list-style-type: decimal-leading-zero;
         }
 
-        main div.centralizado {
-            text-align: center;
-        }
-
-        main iframe {
-            width: 500px;
-            height: 800px;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: black;
-            margin-top: 20px;
-        }
-
-        footer p {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-size: 0.9em;
-            color: white;
-            margin: 0px;
-            padding: 6px;
-        }
-
-        footer a {
-            color: white;
-            font-weight: bold;
+        li a {
             text-decoration: none;
+            font-size: 1.2em;
         }
 
-        footer a:hover {
+        li a:hover {
             text-decoration: underline;
+            background-color: rgba(139, 0, 0, 0.301);
+            border-radius: 5px;
+            transition-duration: 0.5s;
         }
 
+        li a:visited {
+            color: purple;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            width: 450px;
+            height: 750px;
+            border-radius: 7px;
+        }
     </style>
 </head>
 <body>
-    <main>
+    <header>
         <h1>
-            Aqui estão os meus projeto feito em HTML5 e CSS3
+            Aqui está uma lista dos projetos criado por mim!
         </h1>
-        <p>
-            Projeto Android
-        </p>
-        <div class="centralizado">
-            <iframe src="https://enriquemk.github.io/projeto-android/" frameborder="0">
-                <a href="https://enriquemk.github.io/projeto-android/" target="_blank" rel="external">Meu Projeto Android</a>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li>
+                    <a href="https://enriquemk.github.io/projeto-android/" target="frame">
+                        Mini-Projeto Android
+                    </a>
+                </li>
+                <li>
+                    <a href="https://enriquemk.github.io/projeto-cordel/" target="frame">
+                        Mini-Projeto Cordel
+                    </a>
+                </li>
+            </ul>
+
+            <iframe src="" frameborder="1" name="frame">
+                <p>
+                    Infezlimente o seu navegador não é compatível com iframes
+                </p>
             </iframe>
-        </div>
-        <p>
-            Projeto Cordel
-        </p>
-        <div class="centralizado">
-            <iframe src="https://enriquemk.github.io/projeto-cordel/" frameborder="0">
-                <a href="https://enriquemk.github.io/projeto-cordel/" target="_blank" rel="external">Meu Projeto Cordel</a>
-            </iframe>
-        </div>
+        </section>
     </main>
-    <footer>
-        <p>
-            Site apenas para exibir meu projetos, feito por <a href="https://github.com/EnriqueMK" target="_blank" rel="external">Enrique Paulo</a>
-        </p>
-    </footer>
 </body>
 </html>
