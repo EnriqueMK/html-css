@@ -1,7 +1,7 @@
 # html-css
  Curso de HTML5 e CSS3
 
-Estou aprendendo a criar sites e agora eu vou gerenciar meus repositórios!
+Estou aprendendo a criar site, aqui será meu repositório onde alocarei meus projetos!
 
 Meu Primeiro desafio em HTML5
 <a href="https://enriquemk.github.io/html-css/Módulo 1/Desafios/d001/index.html">Executar o desafio 001</a>
