@@ -1,7 +1,35 @@
 @charset "UTF-8";
 
+/* Versão Mobile First */
+
+/* Typical Device Breakpoints
+Celulares:              até 600px
+iPad ou Tablet:         até 768px
+Laptop e Tela pequena:  até 992px
+Tela grande ou Desktop: até 1200px
+TV e Tela extragrande:  acima de 1200px
+*/
+
 /* 
     Paleta de cores
     Verde: #49a09d    
     Lilás: #5f2c82
 */
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+* {
+    font-family: var(--font-padrao);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100vh;
+}
